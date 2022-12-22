@@ -38,7 +38,7 @@ def start_num():
 	try:
 		# send 2 with GET (url)
 		response = requests.get('http://sdw2:5001/?num=2')
-	except requests.exceptions.ReqiestException as e:
+	except requests.exceptions.RequestException as e:
 		print('\n Cannot reach the service. \n', file=sys.stderr)
 		return 'ERROR\n'
 	return '369 is started! \n'
